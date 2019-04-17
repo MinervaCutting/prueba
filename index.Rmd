@@ -1,5 +1,5 @@
 ---
-title: "Como publicar vuestras cotis -PASO A PAS0"
+title: "Como publicar - PASO A PAS0"
 author: "Minerva"
 date: '17 Abril 2019'
 output:
@@ -31,9 +31,9 @@ library(knitr)
 ```
 
 
-### 1.-Rmd
+### 1.-RMD
 
-El primer paso es crear la carpeta COTI y crear un Rmd como siempre partiendo del Template que hay en X y en la misma carpeta tendréis el logo, el curriculum, el timeline en excel,etc
+El primer paso es crear la carpeta COTI y crear un Rmd como siempre partiendo del Template que hay en X y en la misma carpeta tendremos el logo, el curriculum, el timeline en excel,etc
 
 
 <img src = "foto 1.png" width="400"> 
@@ -41,7 +41,7 @@ El primer paso es crear la carpeta COTI y crear un Rmd como siempre partiendo de
 ****
 
 
-### 2.-Carpeta WEBSITE
+### 2.-CARPETA WEBSITE
 
 Una vez acabado el Rmd y comprobado que se renderiza bien en un html, crearemos una carpeta paralela llamada WEBSITE (o similar) y dentro copiaremos de la carpeta COTI y del Template de X los archivos necesarios:
 
@@ -66,7 +66,7 @@ rmd generado para al que llamaremos "index"
 
 ### 3.-PROYECTO EN RSTUDIO
 
-Abrimos index.rmd en rstudio y seguimos los siguientes pasos:
+Abriremos index.rmd en rstudio y seguiremos los siguientes pasos:
 
 1.- File/new project
 
@@ -82,7 +82,7 @@ Nos pide la URL del repositorio en Github, por lo que lo dejamos en standby y va
 
 ****
 
-Una vez ya tenéis la URL de Github la copiais/pegais para generar el proyecto.
+Una vez ya tenéis la URL de Github la Copiamos/pegamos para generar el proyecto.
 
 <img src = "URL GITHUB.png" width="800"> 
 ****
@@ -98,13 +98,17 @@ Todos los los demás archivos deberán meterse dentro de esta nueva carpeta.
 
 ### 4.- REPOSITORIO EN GITHUB
 
-Os metéis en vuestro perfil y clickais en "start a project"
+Nos metemos en vuestro perfil y clickamos en "start a project"
 
-<img src = "hub.png" width="350"> <img src = "hub1.png" width="350" align="right"> 
+<img src = "hub.png" width="800"> 
+
+<img src = "hub1.png" width="800"> 
 
 ****
 
-Escribís el nombre del repositorio y click en "Create repository"
+
+
+Escribimos el nombre del repositorio y click en **Create repository**
 
 Y aparece una pantalla como esta:
 
@@ -119,14 +123,76 @@ En la esquina superior derecha cambiamos Project de (none) a el projecto que hem
 
 <img src = "PROJECT.png" width="800"> 
 
-Se "reinicia" solo RStudio y aparece la pestaña Built - la clickamos y así generamos el archivo _site necesario para publicar la web.
+Se "reinicia" solo RStudio y aparece la pestaña **Build** - clickamos en **Build Website** y así generamos el archivo _site necesario para publicar la web.
 
-<img src = "BUILT.png" width="350"> <img src = "BUILT2.png" width="350" align="right"> 
+<img src = "BUILT2.png" width="800"> 
 
 ****
 
-### 5.- SUBIR ARCHIVOS AL REPOSITORIO DE GITHUB
+### 6.- SUBIR ARCHIVOS A GITHUB
 
+Clickamos la pestaña GIT y nos aparecen todos los archivos que están dentro de la carpeta con un simbolito amarillo, los clickamos todos y el simbolito se pone azul
 
+<img src = "1.png" width="800">
 
+<img src = "2.png" width="800"> 
+
+****
+
+Cuando estén todos en azul, clickamos **commit** y se abre otra pantalla en la que deberemos escibir un mensaje y luego clickar en **commit** otra vez.
+
+<img src = "3.png" width="800"> 
+
+****
+
+<img src = "4.png" width="800" > 
+
+****
+
+<img src = "5.png" width="800"> 
+
+****
+Una vez esté todo ok, cerramos y le damos a la flechita verde **Push** - esto hará que los archivos suban a github y si todo está correcto aparecerá el siguiente mensaje:
+
+<img src = "6.png" width="800"> 
+
+****
+
+Para finalizar refrescaremos la página de GitHub y aparecerán todos los archivos que hemos subido.
+
+<img src = "github3.png" width="800"> 
+
+****
+
+### 7.- PUBLICAR EN NETLIFY
+
+Abrimos nuestra cuenta en app.netlify.com y clickamos en **New site from Git**
+
+<img src = "n1.png" width="800"> 
+
+****
+
+y clickamos en el botón **GitHub** y eso nos lleva a la siguiente pantalla donde aparecen los repositorios de Github.
+
+Clickamos el que nos interesa para nuestra coti y nos lleva a una pantalla así:
+
+<img src = "n3.png" width="800"> 
+
+****
+
+Deberemos escribir _site en **publish directory** y luego **deploy site**
+
+Y después de unos segundos ya nos aparece el link.
+
+<img src = "n4.png" width="800"> 
+
+***
+
+Cambiaremos el nombre del link para que no sea tan ridículo en **site settings** y le pondremos uno que tenga referencia a nuestra coti
+
+<img src = "n5.png" width="800"> 
+
+***
+
+FIN!
 

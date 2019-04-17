@@ -12,7 +12,7 @@
 <meta name="author" content="Minerva" />
 
 
-<title>Como publicar vuestras cotis -PASO A PAS0</title>
+<title>Como publicar - PASO A PAS0</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -379,7 +379,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Como publicar vuestras cotis -PASO A PAS0</h1>
+<h1 class="title toc-ignore">Como publicar - PASO A PAS0</h1>
 <h4 class="author"><em>Minerva</em></h4>
 <h4 class="date"><em>17 Abril 2019</em></h4>
 
@@ -393,13 +393,13 @@ div.tocify {
     }); 
 </script>
 <div id="rmd" class="section level3">
-<h3>1.-Rmd</h3>
-<p>El primer paso es crear la carpeta COTI y crear un Rmd como siempre partiendo del Template que hay en X y en la misma carpeta tendréis el logo, el curriculum, el timeline en excel,etc</p>
+<h3>1.-RMD</h3>
+<p>El primer paso es crear la carpeta COTI y crear un Rmd como siempre partiendo del Template que hay en X y en la misma carpeta tendremos el logo, el curriculum, el timeline en excel,etc</p>
 <p><img src = "foto%201.png" width="400"></p>
 <hr />
 </div>
 <div id="carpeta-website" class="section level3">
-<h3>2.-Carpeta WEBSITE</h3>
+<h3>2.-CARPETA WEBSITE</h3>
 <p>Una vez acabado el Rmd y comprobado que se renderiza bien en un html, crearemos una carpeta paralela llamada WEBSITE (o similar) y dentro copiaremos de la carpeta COTI y del Template de X los archivos necesarios:</p>
 <p>_site.yml</p>
 <p>about.Rms</p>
@@ -413,7 +413,7 @@ div.tocify {
 </div>
 <div id="proyecto-en-rstudio" class="section level3">
 <h3>3.-PROYECTO EN RSTUDIO</h3>
-<p>Abrimos index.rmd en rstudio y seguimos los siguientes pasos:</p>
+<p>Abriremos index.rmd en rstudio y seguiremos los siguientes pasos:</p>
 <p>1.- File/new project</p>
 <p>2.- Version control</p>
 <p>3.- GIT</p>
@@ -421,7 +421,7 @@ div.tocify {
 <hr />
 <p>Nos pide la URL del repositorio en Github, por lo que lo dejamos en standby y vamos a crearlo (MIRAD EL PASO 4)</p>
 <hr />
-<p>Una vez ya tenéis la URL de Github la copiais/pegais para generar el proyecto.</p>
+<p>Una vez ya tenéis la URL de Github la Copiamos/pegamos para generar el proyecto.</p>
 <p><img src = "URL%20GITHUB.png" width="800"> ****</p>
 <p>Al generar el proyecto se crea una carpeta con su nombre</p>
 <p><img src = "URL%20GITHUB2.png" width="800"></p>
@@ -430,10 +430,11 @@ div.tocify {
 </div>
 <div id="repositorio-en-github" class="section level3">
 <h3>4.- REPOSITORIO EN GITHUB</h3>
-<p>Os metéis en vuestro perfil y clickais en “start a project”</p>
-<p><img src = "hub.png" width="350"> <img src = "hub1.png" width="350" align="right"></p>
+<p>Nos metemos en vuestro perfil y clickamos en “start a project”</p>
+<p><img src = "hub.png" width="800"></p>
+<p><img src = "hub1.png" width="800"></p>
 <hr />
-<p>Escribís el nombre del repositorio y click en “Create repository”</p>
+<p>Escribimos el nombre del repositorio y click en <strong>Create repository</strong></p>
 <p>Y aparece una pantalla como esta:</p>
 <p><img src = "URL%20GITHUB.png" width="800"></p>
 <hr />
@@ -442,12 +443,47 @@ div.tocify {
 <h3>5.- CREAR ARCHIVO _SITE</h3>
 <p>Cerramos Rstudio y volvemos a abrirlo clickando en index.rmd En la esquina superior derecha cambiamos Project de (none) a el projecto que hemos creado.</p>
 <p><img src = "PROJECT.png" width="800"></p>
-<p>Se “reinicia” solo RStudio y aparece la pestaña Built - la clickamos y así generamos el archivo _site necesario para publicar la web.</p>
-<p><img src = "BUILT.png" width="350"> <img src = "BUILT2.png" width="350" align="right"></p>
+<p>Se “reinicia” solo RStudio y aparece la pestaña <strong>Build</strong> - clickamos en <strong>Build Website</strong> y así generamos el archivo _site necesario para publicar la web.</p>
+<p><img src = "BUILT2.png" width="800"></p>
 <hr />
 </div>
-<div id="subir-archivos-al-repositorio-de-github" class="section level3">
-<h3>5.- SUBIR ARCHIVOS AL REPOSITORIO DE GITHUB</h3>
+<div id="subir-archivos-a-github" class="section level3">
+<h3>6.- SUBIR ARCHIVOS A GITHUB</h3>
+<p>Clickamos la pestaña GIT y nos aparecen todos los archivos que están dentro de la carpeta con un simbolito amarillo, los clickamos todos y el simbolito se pone azul</p>
+<p><img src = "1.png" width="800"></p>
+<p><img src = "2.png" width="800"></p>
+<hr />
+<p>Cuando estén todos en azul, clickamos <strong>commit</strong> y se abre otra pantalla en la que deberemos escibir un mensaje y luego clickar en <strong>commit</strong> otra vez.</p>
+<p><img src = "3.png" width="800"></p>
+<hr />
+<p><img src = "4.png" width="800" ></p>
+<hr />
+<p><img src = "5.png" width="800"></p>
+<hr />
+<p>Una vez esté todo ok, cerramos y le damos a la flechita verde <strong>Push</strong> - esto hará que los archivos suban a github y si todo está correcto aparecerá el siguiente mensaje:</p>
+<p><img src = "6.png" width="800"></p>
+<hr />
+<p>Para finalizar refrescaremos la página de GitHub y aparecerán todos los archivos que hemos subido.</p>
+<p><img src = "github3.png" width="800"></p>
+<hr />
+</div>
+<div id="publicar-en-netlify" class="section level3">
+<h3>7.- PUBLICAR EN NETLIFY</h3>
+<p>Abrimos nuestra cuenta en app.netlify.com y clickamos en <strong>New site from Git</strong></p>
+<p><img src = "n1.png" width="800"></p>
+<hr />
+<p>y clickamos en el botón <strong>GitHub</strong> y eso nos lleva a la siguiente pantalla donde aparecen los repositorios de Github.</p>
+<p>Clickamos el que nos interesa para nuestra coti y nos lleva a una pantalla así:</p>
+<p><img src = "n3.png" width="800"></p>
+<hr />
+<p>Deberemos escribir _site en <strong>publish directory</strong> y luego <strong>deploy site</strong></p>
+<p>Y después de unos segundos ya nos aparece el link.</p>
+<p><img src = "n4.png" width="800"></p>
+<hr />
+<p>Cambiaremos el nombre del link para que no sea tan ridículo en <strong>site settings</strong> y le pondremos uno que tenga referencia a nuestra coti</p>
+<p><img src = "n5.png" width="800"></p>
+<hr />
+<p>FIN!</p>
 </div>
 
 
